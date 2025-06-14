@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --color-fondo: #f5efeb; 
+            --color-texto: #5c524f;
+            --color-marron-suave: #d3c4be;
+            --color-marron-medio: #a58e85;
+            --color-rosa-acento: #e8c2ca;
+            --color-blanco-calido: #fff;
+            --fuente-titulos: 'Cinzel', serif;
+            --fuente-texto: 'Quicksand', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--fuente-texto);
+            background-color: var(--color-fondo); 
+            color: var(--color-texto);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .linktree-container {
+            width: 100%;
+            max-width: 680px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--color-marron-medio); 
+            margin-bottom: 1rem;
+            object-fit: cover; 
+        }
+
+        .profile-name {
+            font-family: var(--fuente-titulos); 
+            color: var(--color-texto); 
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .profile-title {
+            font-family: var(--fuente-texto);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 0.25rem;
+            margin-bottom: 2rem;
+            color: var(--color-marron-medio); 
+        }
+
+        .links-list a {
+            display: block;
+            background-color: var(--color-marron-medio); 
+            border: 2px solid var(--color-marron-medio);
+            color: var(--color-blanco-calido); 
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .links-list a:hover {
+            transform: scale(1.03);
+            background-color: var(--color-rosa-acento); 
+            border-color: var(--color-rosa-acento);
+            color: var(--color-texto); 
+        }
+
+        .social-links {
+            margin-top: 2.5rem;
+        }
+
+        .social-links a {
+            color: var(--color-marron-medio); 
+            font-size: 1.8rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .social-links a:hover {
+            color: var(--color-rosa-acento); 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="linktree-container">
+
+        <img src="images/yo.jpeg" alt="Foto de Perfil" class="profile-picture">
+        <h1 class="profile-name">Martina Dawid</h1>
+        
+        <p class="profile-title">Estudiante de Negocios Digitales</p>
+
+        <div class="links-list">
+            <a href="#" target="_blank">IDENTIKIT</a>
+            <a href="#" target="_blank">BLOG</a>
+            <a href="#" target="_blank">PORTFOLIO</a>
+        </div>
+
+        <div class="social-links">
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
